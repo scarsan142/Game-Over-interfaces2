@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/directornav"
+    app:startDestination="@id/loginFragment">
+    <action
+        android:id="@+id/action_randomFragment_to_favorites"
+        app:destination="@id/FavItemList" />
+
+    <include app:graph="@navigation/nav_graph"/>
+    <include app:graph="@navigation/nav_graph"/>
+
+</navigation>

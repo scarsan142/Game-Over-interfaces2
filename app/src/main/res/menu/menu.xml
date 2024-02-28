@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ItemList"
+        android:icon="@drawable/juegosmenu"
+        android:title="@string/juego"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/FavItemList"
+        android:icon="@drawable/favoritosmenu"
+        android:title="@string/Favoritos"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/UserInfo"
+        android:icon="@drawable/perfilmenu"
+        android:title="@string/Usuario"
+        app:showAsAction="ifRoom"/>
+
+</menu>

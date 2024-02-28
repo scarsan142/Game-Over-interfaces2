@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ItemListMenu"
+        android:title="@string/ListaJuegos" />
+    <item
+        android:id="@+id/FavItemListMenu"
+        android:title="@string/ListaFavoritos" />
+    <item
+        android:id="@+id/UserInfoMenu"
+        android:title="@string/Perfil" />
+</menu>

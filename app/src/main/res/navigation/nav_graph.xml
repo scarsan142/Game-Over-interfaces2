@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.marisma.gameover.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.marisma.gameover.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_creditFragment"
+            app:destination="@id/creditFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_favItemListFragment"
+            app:destination="@id/favItemListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_userInfoFragmentFragment"
+            app:destination="@id/userInfoFragmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/creditFragment"
+        android:name="com.marisma.gameover.CreditFragment"
+        android:label="fragment_credit"
+        tools:layout="@layout/fragment_credit" />
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="ItemListFragment"
+        android:label="ItemListFragment" >
+        <action
+            android:id="@+id/action_itemListFragment_to_detailitemFragment"
+            app:destination="@id/detailitemFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_userInfoFragmentFragment"
+            app:destination="@id/userInfoFragmentFragment" />
+        <!-- Agregar enlace profundo para el fragmento itemListFragment -->
+        <deepLink
+            app:uri="android-app://com.marisma.gameover/ItemListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailitemFragment"
+        android:name="com.marisma.gameover.DetailitemFragment"
+        android:label="DetailitemFragment" />
+    <fragment
+        android:id="@+id/userInfoFragmentFragment"
+        android:name="UserInfoFragmentFragment"
+        android:label="UserInfoFragmentFragment" >
+        <action
+            android:id="@+id/action_userInfoFragmentFragment_to_favItemListFragment"
+            app:destination="@id/favItemListFragment" />
+        <!-- Agregar enlace profundo para el fragmento userInfoFragmentFragment -->
+        <deepLink
+            app:uri="android-app://com.marisma.gameover/UserInfoFragmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favItemListFragment"
+        android:name="FavItemListFragment"
+        android:label="FavItemListFragment" >
+        <!-- Agregar enlace profundo para el fragmento favItemListFragment -->
+        <deepLink
+            app:uri="android-app://com.marisma.gameover/FavItemListFragment" />
+        <action
+            android:id="@+id/action_favItemListFragment_to_detailitemFragment"
+            app:destination="@id/detailitemFragment" />
+    </fragment>
+
+</navigation>

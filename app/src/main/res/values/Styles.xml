@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Define el tema nocturno de la aplicación -->
+    <style name="Night.AppTheme" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Aplica el estilo existente como el tema nocturno -->
+        <item name="android:windowBackground">@color/md_theme_dark_background</item>
+        <!-- Asegúrate de incluir otros atributos del tema si es necesario -->
+    </style>
+</resources>
